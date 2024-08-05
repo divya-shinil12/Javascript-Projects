@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="scripts.js"></script>
+    <title>Projects using JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Learning JavaScript</h1>
+
+        <!--Question 1-->
+        <section class="project-section">
+            <p>Question 1: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Silly_story_generator Go through this URL and complete the scenario defined in this</p>
+        </section>
+
+        <!--Question 2-->
+        <section class="project-section">
+            <p>Question 2: Use the for loop to output even numbers from 2 to 10.</p>
+            <button onclick="displayEvenNumbers()">Show Even Numbers</button>
+            <div id="evenNumbers"></div>
+        </section>
+
+        <!--Question 3-->
+        <section class="project-section">
+            <p>Question 3: Write a loop which prompts for a number greater than 100. If the visitor enters another number – ask them to input again.</p>           
+            <button onclick="number_prompt()">Click here to enter the number.</button>
+            <div id="displayNum"></div>
+        </section>
+
+        <!--Question 4-->
+        <section class="project-section">
+            <p>Question 4: Write the code which outputs prime numbers in the interval from 2 to n.</p>
+            <button onclick="findPrimeNums()">Display Prime Numbers</button>
+            <div id="primeNum"></div>
+        </section>
+
+        <!--Question 5-->
+        <section class="project-section">
+            <p>Question 5: Write a javascript program that reverses a number.</p>
+            <button onclick="reverseNumber()">Reverse Number</button>
+            <div id="numEntered"></div>
+            <div id="revNum"></div>
+        </section>
+
+        <!--Question 6-->
+        <section class="project-section">
+            <p>Question 6: Write a JavaScript function that returns a passed string with letters in alphabetical order.</p>
+            <button onclick="alphabeticalOrder()">Alphabetical Order</button>
+            <div id="wordEntered"></div>
+            <div id="alphabetOrder"></div>
+        </section>
+
+        <!--Question 7-->
+        <section class="project-section">
+            <p>Question 7: Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.</p>
+            <button onclick="vowelsCount()">Count number of vowels</button>
+            <div id="stringEntered"></div>
+            <div id="vowelsCount"></div>
+        </section>
+
+        <!--Question 8-->
+        <section class="project-section">
+            <p>Question 8: Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.</p>
+            <button onclick="capitalizeFirstLetter()">Enter sentence</button>
+            <div id="sentenceEntered"></div>
+            <div id="textCapitalize"></div>
+        </section>
+
+        <!--Question 9-->
+        <section class="project-section">
+            <p>Question 9: Write a JavaScript program to get the current date.</p>
+            <button onclick="currentDate()">Display Today's Date</button>
+            <div id="dt_val"></div>
+        </section>
+
+        <!--Question 10-->
+        <section class="project-section">
+            <p>Question 10: Write a JavaScript program to calculate number of days left until next Christmas.</p>
+            <button onclick="calculateDate()">Calculate days</button>
+            <div id="daysLeft"></div>
+        </section>
+
+        <!--Question 11-->
+        <section class="project-section">
+            <p>Question 11: Write a JavaScript program to sort the items of an array.</p>
+            <button onclick="sortingFunction()">Sort Numbers</button>
+            <div id="numLists"></div>
+            <div id="sortedNum"></div>
+        </section>
+        
+        <!--Question 12-->
+        <section class="project-section">
+            <p>Question 12: Write a JavaScript function to get the last day of a month.</p>
+            <button onclick="monthLastDays(2014, 1)">Month Last Day</button>
+            <div id="lastDays"></div>
+        </section>
+
+        <!--Question 13-->
+        <section class="project-section">
+            <p>Question 13: Write a JavaScript program to calculate age.</p>
+            <button onclick="ageCalculator()">Calculate Age</button>
+            <div id="calculatedAge"></div>
+        </section>
+
+        <!--Question 14-->
+        <section class="project-section">
+            <p>Question 14: Write a function that takes the age of a person as parameter and returns true if true or ask a confirmation message &quot;Did your parents allow you?&quot;</p>
+            <button onclick="checkAge()">Age confirmation</button>
+        </section>
+
+        <!--Question 15-->
+        <section class="project-section">
+            <p>Question 15: Write a function min(a,b) which returns the least of two numbers a and b.</p>
+                <label for="num1">Enter the first number:
+                    <input type="number" id="num1" placeholder="Enter the first number"></label>
+                <label for="num2">Enter the second number:
+                    <input type="number" id="num2" placeholder="Enter the second number"></label>
+            <button onclick="showMinNumber()">Find the least number</button>    
+            <div id="minNumber"></div>
+        </section>
+
+        <!--Question 16-->
+        <section class="project-section">
+            <p>Question 16: Write a function pow(x,n) that returns x in power n. Or, in other words, multiplies x by itself n times and returns the result.</p>
+                <label for="base_num">Enter base number: <input type="number" id="base_num" placeholder="Enter base number"></label>
+                <label for="expo_num">Enter exponential value: <input type="number" id="expo_num" placeholder="Enter exponent value"></label>
+            <button onclick="expo()">Exponential Value</button>
+            <div id="exponential"></div>
+        </section>
+
+        <!--Question 18-->
+        <section class="project-section">
+            <p>Question 18: Enter the number of wins, draws, and losses:</p>
+                <label for="wins">Number of match won : <input type="number" id="wins" placeholder="Enter number of wins"></label>
+                <label for="draws">Number of draws: <input type="number" id="draws" placeholder="Enter number of draws"></label><br>
+                <label for="losses">Number of match lost: <input type="number" id="losses" placeholder="Enter number of losses"></label>
+            <button onclick="calculatePoints()">Calculate Points</button>
+            <div id="result"></div>
+            <ul style="text-align: left;">
+                <li>Wins get 3 points</li>
+                <li>Draws get 1 point</li>
+                <li>losses get 0 point</li>
+            </ul>
+        </section>
+
+        <!--Question 19-->
+        <section class="project-section">
+            <p>JavaScript function to get time differences in days between two dates</p>
+                <label for="date1">Enter first first date : <input type="date" id="date1"></label>
+                <label for="date2">Enter the second date: </label><input type="date" id="date2"></label>
+            <button onclick="showTimeDiff()">Time differences</button>
+            <div id="showTime"></div>
+        </section>
+
+        <!--Question 20-->
+        <section class="project-section">
+            <p>Question 20: Write a function that calculates the ticket price based on age</p>
+                <label for="person_age">Enter your age</label>
+                <input type="number" id="person_age" name="person_age" min="0" required>
+                <button onclick="calculatePersonAge()">Calculate Ticket Price</button>
+                <div id="ageCheck"></div>
+        </section>
+    </div>
+</body>
+</html>
